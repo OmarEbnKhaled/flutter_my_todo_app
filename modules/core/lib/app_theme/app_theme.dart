@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-const primaryColor = Color(0xff082659);
+const primaryColor = Color(0xFF00658E);
 const secondaryColor = Color(0xff51eec2);
 
 final appTheme = ThemeData(
@@ -27,7 +27,11 @@ final appTheme = ThemeData(
     floatingLabelStyle: const TextStyle(color: primaryColor),
     iconColor: secondaryColor,
     focusedBorder: OutlineInputBorder(
-      borderSide: const BorderSide(color: primaryColor),
+      borderSide: const BorderSide(color: primaryColor, width: 2),
+      borderRadius: BorderRadius.circular(8),
+    ),
+    enabledBorder: OutlineInputBorder(
+      borderSide: const BorderSide(color: Colors.grey, width: 1),
       borderRadius: BorderRadius.circular(8),
     ),
     border: OutlineInputBorder(

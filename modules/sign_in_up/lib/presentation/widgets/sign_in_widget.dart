@@ -28,7 +28,9 @@ class SignInWidget extends StatelessWidget {
           const CustomTextFormField(hint: 'Password'),
           const SizedBox(height: 40),
           MaterialButton(
-            onPressed: () {},
+            onPressed: () {
+              Modular.to.pushNamed('/lists/');
+            },
             color: myPrimaryColor,
             child: const Text(
               'Sign In',

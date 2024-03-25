@@ -8,7 +8,7 @@ class SignUpPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: _buildBody(),
+      body: Center(child: SingleChildScrollView(child: _buildBody())),
     );
   }
 
