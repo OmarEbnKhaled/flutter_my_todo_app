@@ -7,6 +7,8 @@ class AppWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Modular.setInitialRoute('/auth/signIn');
+
     return MaterialApp.router(
       debugShowCheckedModeBanner: false,
       theme: appTheme,

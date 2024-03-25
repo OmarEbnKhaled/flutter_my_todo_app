@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/sign_in_widget.dart';
+import '../widgets/sign_up_widget.dart';
 
-class SignInPage extends StatelessWidget {
-  const SignInPage({super.key});
+class SignUpPage extends StatelessWidget {
+  const SignUpPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -13,6 +13,6 @@ class SignInPage extends StatelessWidget {
   }
 
   Widget _buildBody() {
-    return const SignInWidget();
+    return const SignUpWidget();
   }
 }

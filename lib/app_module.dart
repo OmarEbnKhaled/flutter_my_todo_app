@@ -6,7 +6,7 @@ import 'package:tasks/tasks_module.dart';
 class AppModule extends Module {
   @override
   void routes(RouteManager r) {
-    r.module('/', module: SignInUpModule());
+    r.module('/auth', module: SignInUpModule());
     r.module('/lists', module: ListsModule());
     r.module('/tasks', module: TasksModule());
   }
