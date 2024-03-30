@@ -11,8 +11,26 @@ dependencies:
   flutter:
     sdk: flutter
     
+  # Flutter modular for dependency injection and route management
   flutter_modular: ^6.3.2
+  # Bloc for state management.
+  flutter_bloc: ^8.1.5
+  # Image picker to get Images from camera or gallery.
   image_picker: ^1.0.7
+  # Functional Programming Things
+  dartz: ^0.10.1
+  # Value equality
+  equatable: ^2.0.5
+  # For check is online or not.
+  internet_connection_checker: ^1.0.0+1
+  # Firebase Component
+  firebase_core: ^2.27.2
+  # cloud_firestore: ^4.15.10
+  # firebase_storage: ^11.6.11
+  # firebase_messaging: ^14.7.21
+  firebase_auth: ^4.18.0
+  google_sign_in: ^6.2.1
+
   path: ^1.9.0
 
 dev_dependencies:

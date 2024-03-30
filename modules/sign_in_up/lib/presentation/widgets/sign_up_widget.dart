@@ -2,7 +2,7 @@ import 'dart:io';
 
 import 'package:core/utils/colors.dart';
 import 'package:core/widgets/custom_text_form_field.dart';
-import 'package:dependencies/dependencies.dart';
+import 'package:dependencies/dependencies.dart' as dependencies;
 import 'package:flutter/material.dart';
 
 import 'google_sign_in_up_btn.dart';
@@ -20,15 +20,15 @@ class _SignUpWidgetState extends State<SignUpWidget> {
   String? url;
 
   getImage() async {
-    final ImagePicker picker = ImagePicker();
+    final dependencies.ImagePicker picker = dependencies.ImagePicker();
     // Pick an image.
     // final XFile? image = await picker.pickImage(source: ImageSource.gallery);
     // Capture a photo.
-    final XFile? imageCamera =
-        await picker.pickImage(source: ImageSource.camera);
+    final dependencies.XFile? imageCamera =
+        await picker.pickImage(source: dependencies.ImageSource.camera);
     if (imageCamera != null) {
       file = File(imageCamera.path);
-      imageName = basename(imageCamera.path);
+      imageName = dependencies.basename(imageCamera.path);
     }
     url = null;
     setState(() {});
@@ -96,7 +96,7 @@ class _SignUpWidgetState extends State<SignUpWidget> {
           const SizedBox(height: 50),
           TextButton(
             onPressed: () {
-              Modular.to.pop();
+              dependencies.Modular.to.pop();
             },
             child: const Text('I am already have account, Sign In'),
           ),
