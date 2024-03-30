@@ -19,7 +19,7 @@ class SignInWidget extends StatelessWidget {
         children: [
           const Text(
             'Welcome to \nMy ToDo App.',
-            style: TextStyle(fontSize: 24),
+            style: TextStyle(fontSize: 24, color: myPrimaryColor),
             textAlign: TextAlign.center,
           ),
           const SizedBox(height: 50),

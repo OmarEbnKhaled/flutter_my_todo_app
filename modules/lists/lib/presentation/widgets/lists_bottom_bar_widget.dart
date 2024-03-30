@@ -3,8 +3,8 @@ import 'package:core/utils/colors.dart';
 
 import 'add_new_list_dialog_widget.dart';
 
-class ListsBottomBar extends StatelessWidget {
-  const ListsBottomBar({super.key});
+class ListsBottomBarWidget extends StatelessWidget {
+  const ListsBottomBarWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
