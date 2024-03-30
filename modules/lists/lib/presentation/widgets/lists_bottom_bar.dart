@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:core/utils/colors.dart';
 
+import 'add_new_list_dialog_widget.dart';
+
 class ListsBottomBar extends StatelessWidget {
   const ListsBottomBar({super.key});
 
@@ -14,7 +16,9 @@ class ListsBottomBar extends StatelessWidget {
         children: [
           Expanded(
             child: InkWell(
-              onTap: () {},
+              onTap: () {
+                _buildAddNewListDialog(context);
+              },
               child: Container(
                 width: MediaQuery.of(context).size.width * 0.9,
                 margin: const EdgeInsets.symmetric(horizontal: 16),
@@ -48,6 +52,20 @@ class ListsBottomBar extends StatelessWidget {
           ),
         ],
       ),
+    );
+  }
+
+  void _buildAddNewListDialog(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (context) {
+        return const Dialog(
+          insetPadding: EdgeInsets.symmetric(horizontal: 16),
+          shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.all(Radius.circular(10.0))),
+          child: AddNewListDialogWidget(),
+        );
+      },
     );
   }
 }
