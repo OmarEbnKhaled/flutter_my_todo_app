@@ -62,8 +62,8 @@ class _SignInWidgetState extends State<SignInWidget> {
                 if (formState.currentState!.validate()) {
                   dependencies.BlocProvider.of<SignInBloc>(context)
                       .add(SignInEmailPasswordEvent(
-                    email: emailController.text,
-                    password: passwordController.text,
+                    email: emailController.text.trim(),
+                    password: passwordController.text.trim(),
                   ));
                 } else {
                   setState(() {

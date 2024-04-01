@@ -21,10 +21,10 @@ class SignInDataSourceImpl implements SignInDataSource {
         email: email,
         password: password,
       );
-    } catch (e) {
+      return Future.value(unit);
+    } catch (_) {
       throw ServerException();
     }
-    return Future.value(unit);
   }
 
   @override

@@ -9,6 +9,6 @@ class SignInEmailPasswordUseCase {
   SignInEmailPasswordUseCase({required this.signInRepository});
 
   Future<Either<Failure, Unit>> call(String email, String password) async {
-    return signInRepository.signInEmailPassword(email, password);
+    return await signInRepository.signInEmailPassword(email, password);
   }
 }

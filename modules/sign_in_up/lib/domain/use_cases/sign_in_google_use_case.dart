@@ -9,6 +9,6 @@ class SignInGoogleUseCase {
   SignInGoogleUseCase({required this.signInRepository});
 
   Future<Either<Failure, Unit>> call() async {
-    return signInRepository.signInGoogle();
+    return await signInRepository.signInGoogle();
   }
 }
