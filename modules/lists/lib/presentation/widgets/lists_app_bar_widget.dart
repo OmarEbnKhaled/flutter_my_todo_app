@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:core/utils/colors.dart';
 
-class ListsAppBarWidget extends StatelessWidget {
+class ListsAppBarWidget extends StatelessWidget implements PreferredSizeWidget {
   const ListsAppBarWidget({super.key});
 
   @override
@@ -73,4 +73,7 @@ class ListsAppBarWidget extends StatelessWidget {
       ),
     );
   }
+  
+  @override
+  Size get preferredSize => const Size.fromHeight(50);
 }

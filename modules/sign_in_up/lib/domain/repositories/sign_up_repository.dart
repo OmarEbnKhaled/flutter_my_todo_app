@@ -1,8 +1,10 @@
 import 'package:core/failure/failure.dart';
 import 'package:dependencies/dependencies.dart';
 
-abstract class SignUpRepository {
-  Future<Either<Failure, Unit>> signUpEmailPassword(String email, String password);
+import '../../data/model/user_model.dart';
 
-  Future<Either<Failure, Unit>> signUpGoogle(String email, String password);
+abstract class SignUpRepository {
+  Future<Either<Failure, Unit>> signUpEmailPassword(UserModel userModel);
+
+  Future<Either<Failure, Unit>> signUpGoogle();
 }

@@ -22,7 +22,6 @@ class SignInRepositoryImpl implements SignInRepository {
   ) async {
     try {
       await signInDataSource.signInEmailPassword(email, password);
-      print('===============Rigth Happened');
       return const Right(unit);
     } on ServerException {
       return Left(ServerFailure());

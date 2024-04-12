@@ -9,13 +9,10 @@ class ListsPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: PreferredSize(
-        preferredSize: Size(MediaQuery.of(context).size.width, 50),
-        child: const ListsAppBarWidget(),
-      ),
-      bottomNavigationBar: const ListsBottomBarWidget(),
-      body: const ListsWidget(),
+    return const Scaffold(
+      appBar: ListsAppBarWidget(),
+      bottomNavigationBar: ListsBottomBarWidget(),
+      body: ListsWidget(),
     );
   }
 }

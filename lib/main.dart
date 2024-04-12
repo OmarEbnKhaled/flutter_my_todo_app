@@ -12,7 +12,6 @@ void main() async {
       appId: '1:354326317476:android:9ae8ecba723a5498b5d931',
       messagingSenderId: '354326317476',
       projectId: 'flutter-my-todo-app-e564b',
-      // storageBucket: 'myapp-b9yt18.appspot.com',
     ),
   );
   runApp(
